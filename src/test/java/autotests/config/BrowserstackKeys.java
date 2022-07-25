@@ -8,27 +8,28 @@ import org.aeonbits.owner.Config;
         "classpath:config/local.properties"
 })
 public class BrowserstackKeys implements Config {
-     public String username() ;
+
+    public String username();
 
     public String access_key();
 
-    String project() ;
+    String project();
 
-    String build() ;
-
-
-    String name() ;
+    String build();
 
 
-    String app() ;
+    String name();
 
 
-    String device() ;
+    String app();
+
+
+    String device();
 
 
     String osVersion();
 
 
-    String baseUrl() ;
+    String baseUrl();
 
 }
