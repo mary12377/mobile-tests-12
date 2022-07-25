@@ -5,7 +5,7 @@ import org.aeonbits.owner.Config;
 @Config.LoadPolicy(Config.LoadType.MERGE)
 @Config.Sources({
         "system:properties",
-        "classpath:properties/local.properties"
+        "classpath:config/local.properties"
 })
 public class BrowserstackKeys implements Config {
      public String username() ;
