@@ -15,6 +15,7 @@ public class MobileTests extends TestBase {
     @Test
     @DisplayName("Check Search input")
     void searchTest() {
+        back();
         step("Search BrowserStack in Wikipedia", () -> {
             $(AppiumBy.id("org.wikipedia.alpha:id/search_container")).click();
             $(AppiumBy.id("org.wikipedia.alpha:id/search_src_text")).sendKeys("BrowserStack");
@@ -29,6 +30,7 @@ public class MobileTests extends TestBase {
     @Test
     @DisplayName("Check content")
     void openContent() {
+        back();
         step("Search Beatles in Wikipedia", () -> {
             $(AppiumBy.id("org.wikipedia.alpha:id/search_container")).click();
             $(AppiumBy.id("org.wikipedia.alpha:id/search_src_text")).sendKeys("Beatles");
