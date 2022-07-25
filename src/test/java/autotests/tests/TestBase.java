@@ -1,6 +1,5 @@
 package autotests.tests;
 
-import autotests.config.BrowserstackKeys;
 import autotests.config.BrowserstackMobileDriver;
 import autotests.helpers.Attach;
 import com.codeborne.selenide.Configuration;

@@ -1,5 +1,6 @@
 package autotests.config;
 
+import autotests.owner.BrowserstackKeys;
 import com.codeborne.selenide.WebDriverProvider;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.Capabilities;
