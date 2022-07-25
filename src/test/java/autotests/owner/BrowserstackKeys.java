@@ -9,13 +9,21 @@ import org.aeonbits.owner.Config;
 public class BrowserstackKeys extends Config {
 
     String username();
+
     String access_key();
+
     String project();
+
     String build();
+
     String name();
+
     String app();
+
     String device();
+
     String osVersion();
+
     String baseUrl();
 
 }
