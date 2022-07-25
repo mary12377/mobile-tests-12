@@ -8,11 +8,13 @@ import static java.lang.String.format;
 
 public class BrowserStack {
 
+    static BrowserstackKeys config = ConfigFactory.create(BrowserstackKeys.class, System.getProperties());
+
+    public static String
+            login = config.login(),
+            password = config.password();
 
     public static String videoUrl(String sessionId) {
-        BrowserstackKeys config = ConfigFactory.create(BrowserstackKeys.class);
-        String login = config.login();
-        String password = config.password();
         String url = format("https://api.browserstack.com/app-automate/sessions/%s.json", sessionId);
 
         return given()

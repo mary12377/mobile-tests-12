@@ -13,6 +13,7 @@ import java.net.URL;
 
 
 public class BrowserstackMobileDriver implements WebDriverProvider {
+
     static BrowserstackKeys config = ConfigFactory.create(BrowserstackKeys.class);
 
     @Override
