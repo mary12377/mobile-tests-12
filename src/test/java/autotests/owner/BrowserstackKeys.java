@@ -4,13 +4,14 @@ import org.aeonbits.owner.Config;
 
 @Config.LoadPolicy(Config.LoadType.MERGE)
 @Config.Sources({
+        "system:properties",
         "classpath:config/local.properties"
 })
-public class BrowserstackKeys extends Config {
+public interface BrowserstackKeys extends Config {
 
-    String username();
+    String login();
 
-    String access_key();
+    String password();
 
     String project();
 

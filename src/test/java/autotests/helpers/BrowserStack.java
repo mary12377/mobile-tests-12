@@ -11,12 +11,12 @@ public class BrowserStack {
 
     public static String videoUrl(String sessionId) {
         BrowserstackKeys config = ConfigFactory.create(BrowserstackKeys.class);
-        String username = config.username();
-        String access_key = config.access_key();
+        String login = config.login();
+        String password = config.password();
         String url = format("https://api.browserstack.com/app-automate/sessions/%s.json", sessionId);
 
         return given()
-                .auth().basic(username,access_key)
+                .auth().basic(login,password)
                 .log().all()
                 .when()
                 .get(url)
